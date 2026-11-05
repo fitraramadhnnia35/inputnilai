@@ -11,11 +11,11 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - name: Ambil Repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Compile C++
-        run: g++ main.cpp -o program.exe
+        run: g++ main.cpp -o program.exe -static -static-libgcc -static-libstdc++
 
       - name: Upload EXE
         uses: actions/upload-artifact@v4
