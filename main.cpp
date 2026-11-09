@@ -21,6 +21,6 @@ using namespace std;
         cout << "Grade D";
     }
 
-
+system("pause");
     return 0;
 }
